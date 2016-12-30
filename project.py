@@ -192,7 +192,7 @@ def logout():
         return redirect(url_for('mainPage'))
 
 
-@app.route('/catalog/catgeory/1/item/1/JSON')
+@app.route('/catalog.json')
 def catalogJSON():
     """JSON endpoint for catalog items"""
     items = session.query(CatalogItem).all()
